@@ -21,10 +21,10 @@ public class DragAndDrop {
 		WebElement login = driver.findElement(By.xpath("//a[@class='Buttonsstyles__Button-sc-1jwidxo-0 kTwZBr']"));
 		login.click();
 		WebElement loginid = driver.findElement(By.id("user"));
-		loginid.sendKeys("s.k.naveensurya97@gmail.com"+Keys.ENTER);
+		loginid.sendKeys("Enter User Name or Email"+Keys.ENTER);
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 		WebElement loginpass = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@name='password']")));
-		loginpass.sendKeys("naveen742277"+Keys.ENTER);
+		loginpass.sendKeys("Enter Password"+Keys.ENTER);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		
 		//Creating new board
